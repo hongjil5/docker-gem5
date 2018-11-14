@@ -8,6 +8,7 @@ gem5 binary is in /usr/local/bin/gem5.opt
 
 for more information visit http://gem5.org
 
+```Bash
 cd docker-gem5
 
 #build image
@@ -18,3 +19,4 @@ docker run --name gem5 -it -v 'pwd'/workspace:/root/workspace gem5/ubuntu:v1 bas
 
 #test gem5
 /usr/local/bin/gem5.opt /usr/local/src/gem5/configs/example/se.py -c /usr/local/src/gem5/tests/test-progs/hello/bin/x86/linux/hello
+```
