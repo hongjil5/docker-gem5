@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER Eric Van Hensbergen <ericvh@gmail.com>
+MAINTAINER Hongjian Lu <5hongjil5@gmail.com>
 
 # get dependencies
 RUN apt-get update
