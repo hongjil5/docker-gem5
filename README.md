@@ -10,6 +10,11 @@ for more information visit http://gem5.org
 
 cd docker-gem5
 
+#build image
 docker build -t gem5/ubuntu:v1 .
 
+#docker run
 docker run --name gem5 -it -v 'pwd'/workspace:/root/workspace gem5/ubuntu:v1 bash
+
+#test gem5
+/usr/local/bin/gem5.opt /usr/local/src/gem5/configs/example/se.py -c /usr/local/src/gem5/tests/test-progs/hello/bin/x86/linux/hello
